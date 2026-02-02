@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="answerbox">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="row">
+            <button onclick="resultClear()" class="nums op">AC</button>          <!-- OnClick will call a function as mentioned. and in Js we define the function -->
+            <button onclick="removeResult()" class="nums op">DEL</button>
+            <button onclick="insert('%')" class="nums op">%</button>
+            <button onclick="insert('/')" class="nums op">/</button>
+        </div>
+        <div class="row">
+            <button onclick="insert('7')" class="nums">7</button>
+            <button onclick="insert('8')" class="nums">8</button>
+            <button onclick="insert('9')" class="nums">9</button>
+            <button onclick="insert('*')" class="nums op">*</button>
+        </div>
+        <div class="row">
+            <button onclick="insert('4')" class="nums">4</button>
+            <button onclick="insert('5')" class="nums">5</buttom>
+            <button onclick="insert('6')" class="nums">6</button>
+            <button onclick="insert('-')" class="nums op">-</button>
+        </div>
+        <div class="row">
+            <button onclick="insert('1')" class="nums">1</button>
+            <button onclick="insert('2')" class="nums">2</button>
+            <button onclick="insert('3')" class="nums">3</button>
+            <button onclick="insert('+')" class="nums op">+</button>
+        </div>
+        <div class="row">
+            <button onclick="insert('00')" class="nums">00</button>
+            <button onclick="insert('0')" class="nums">0</button>
+            <button onclick="insert('.')" class="nums">.</button>
+            <button onclick="calculate()" class="nums equal">=</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
